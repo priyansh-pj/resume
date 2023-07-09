@@ -49,11 +49,11 @@
 \raggedright
 
 \geometry{
-    paper=letterpaper, % Paper size, change to letterpaper for US letter size
-    top=0.3in, % Top margin
-    bottom=0.2in, % Bottom margin
-    left=0.4in, % Left margin
-    right=0.4in, % Right margin
+    paper=a4paper, % Paper size, change to a4paper for A4 size
+    top=0.35in, % Top margin
+    bottom=0.35in, % Bottom margin
+    left=0.35in, % Left margin
+    right=0.35in, % Right margin
     headheight=0.75cm, % Header height
     footskip=1cm, % Space from the bottom margin to the baseline of the footer
     headsep=0.5cm % Space from the top margin to the baseline of the header
@@ -76,14 +76,14 @@
         }\\[3pt]
     \end{center}
     \hrule
-    \vspace{1pt}\justify{#7}
+    % \vspace{1pt}\justify{#7}
     % \vspace{8pt}
     % \hrule
 
 }
 
 \newcommand{\WorkExperience}[5]{
-    \vspace{2pt}
+    % \vspace{2pt}
     \noindent
     \begin{tabular*}{\textwidth}{@{}l @{\extracolsep{\fill}} r}
         {\large\textbf{#1}} & \textit{#3} \\
@@ -97,8 +97,6 @@
 
 
 \newcommand{\EducationExperience}[5]{
-    \vspace{2pt}
-
     \noindent
     \begin{tabular*}{\textwidth}{@{}l @{\extracolsep{\fill}} r}
         \textbf{#1} & \textit{#3} \\
@@ -109,8 +107,8 @@
     #5
     \end{itemize}
 }
+
 \newcommand{\Responsibility}[3]{
-    \vspace{1pt}
     \noindent
     \begin{tabular*}{\textwidth}{@{}l @{\extracolsep{\fill}} r}
         \textbf{#1} & \textit{#3} \\
