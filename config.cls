@@ -90,7 +90,7 @@
         #2 & #4 \\
     \end{tabular*}
     
-    \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.25em, label={$-$}]%
+    \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1em, label={$-$}]%
         #5
     \end{itemize}
 }
@@ -103,7 +103,7 @@
         #2 & #4 \\
     \end{tabular*}
 
-    \begin{itemize}[noitemsep, topsep=1pt, leftmargin=1.25em, label={$-$}]
+    \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1em, label={$-$}]
     #5
     \end{itemize}
 }
