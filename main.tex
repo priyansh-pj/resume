@@ -1,106 +1,130 @@
-\documentclass[letterpaper]{config}
+
+% English version
+\documentclass{resume}
+
+% Adjust icon size (default: same size as the text)
+\iconsize{\Large}
+
+% File information shown at the footer of the last page
+\fileinfo{%
+  % \faCopyright{} 2023, Xxx Xx \hspace{0.5em}
+  %\creativecommons{by}{4.0} \hspace{0.5em}
+  %\githublink{account}{repo} \hspace{0.5em}
+  % \faEdit{} \today
+}
+
+\name{Priyansh}{Jain}
+
+% \keywords{Full-Stack Development, Machine Learning, Data Science}
+
+% \tagline{\icon{\faBinoculars}} <position-to-look-for>}
+% \tagline{Full-Stack Developer | Data Science}
+% \photo{<height>}{<filename>}
+
+\profile{
+  \hrule
+  \vspace{0.5 em}
+  \begin{tabular}{p{0.4\linewidth} p{0.7\linewidth}}
+  \email{me.priyanshjain@gmail.com} & \mobile{+91 9770423319} \\
+  \github{priyansh-pj} & \linkedin{priyansh-pj} \\
+  \degree{B.Tech (Data Science)} 
+  % Custom information:
+  % \icontext{<icon>}{<text>}
+  % \iconlink{<icon>}{<link>}{<text>}
+  \end{tabular}
+  \vspace{0.5 em}
+  \hrule
+}
+
 
 \begin{document}
-\Header
-    {Priyansh Jain} % name
-    {Indore, India}
-    {+91 9770423319} % phone number
-    {me.priyanshjain@gmail.com} % email
-    {priyansh-pj} % https://linkedin.com/in/_______
-    {priyansh-pj}
-    % {As a dedicated tech enthusiast and aspiring data scientist, I possess a fervent drive to excel in my work and a remarkable aptitude for acquiring new skills swiftly. Proficient in multiple programming languages, I bring extensive experience collaborating effectively within teams. I embody a diligent work ethic and exhibit meticulousness in every task. My unwavering commitment to delivering excellence enables me to consistently achieve outstanding results. I am eager to demonstrate my value as a valuable asset to your esteemed team.}
+\makeheader
 
-\section{Work Experience}
-\WorkExperience
-    {Python Development Lead} % job title
-    {IES - IPS Academy} % company name
-    {Mar 2022 -- Present} % beginning and end of employment. If currently employed write " - Present"
-    {Indore, India} % city, country of employment
-    {
-        \item Developed and optimized 10+ Python scripts and applications, streamlining critical processes such as grade calculation, NBA analysis, and backend development. and leading project for 30\% efficiency increase.
-        \item Overhauled service processes, enhancing communication flow across 10 departments. Achieved an impressive 75\% reduction in paperwork and a notable 40\% efficiency boost.
-        \item Contributed to the development and testing of APIs for a latest CMS portal, ensuring seamless integration and delivering a significant 30\% performance boost.
-        \item Implemented and maintained a college management website using CodeIgniter and SQL, elevating functionality and performance.
-        \item Resolved technical issues, implemented crucial enhancements, and achieved outstanding results, including a 20\% surge in website performance and a remarkable 40\% reduction in page loading time.
-        \item Streamlined the website's efficiency and functionality, optimizing data management and organization for over 1500+ students across 10+ different engineering courses, aligning with the institution's rigorous standards.
-        \item Conducted thorough code reviews and provided technical guidance to a team of 5+ junior developers, elevating code quality and improving software efficiency.
-    } 
-    
-\section{Project}
-\Project
-    {DataBliss} % project name
-    {Django, React, PostgreSQL} % technologies
-    {https://github.com/priyansh-pj/DataBliss}% https://github.com/____/____
-    {
-        \item DataBliss is an ERP web application aiming to optimize organizational efficiency by 30\% using Django, React, and PostgreSQL.
-        \item Prioritized the development of a user-friendly and intuitive interface, resulting in a seamless user experience and broad adoption within the organization.
-        \item Ensured seamless access and usability across various devices and operating systems through cross-platform compatibility.
-        \item Implemented comprehensive testing protocols for DataBliss, resulting in improved reliability, security, and effectiveness; reduced troubleshooting time by 30\% and increased user satisfaction by 25\%.
-        \item Recognized as the runner-up in the Udaan competition for the successful implementation and significant impact of DataBliss in enhancing organizational efficiency by 30\%.
-    }
+%======================================================================
+% Summary & Objectives
+%======================================================================
+Experienced final-year Data Science student with hands-on expertise in Python, Django, and React. Currently \\Interning as Python lead in College Management Software. Adept in programming and web development, ready to contribute with a strong skill set.
+%======================================================================
+\sectionTitle{Technical Skills}{\faWrench}
+%======================================================================
+\begin{competences}[10em]
+  \comptence{Programming}{%
+    Python, Javascript, PHP, HTML, CSS, C, C++
+  }
+  \comptence{Frameworks}{%
+    Django, Codeigniter
+  }
+  \comptence{Libraries}{%
+    React.js, Bootstrap, Ajax, jquery, Numpy, Pandas, Scikit-Learn
+  }
+  \comptence{Tools}{%
+    Git, Postman, Unix, Jupyter Notebook, Excel, PowerBi, Tableau
+  }
+  \comptence{DataBase}{%
+    PostgreSQL, MongoDB
+  }
+  \comptence{Skills}{%
+    Statistics and Probability, Data Visualization, Web Development
+  }
+\end{competences}
 
-
-\section{Accomplishments}
-
-
-\Responsibility
-    {Vice Captain - CSE-Chess Team (IPS Academy)} % school name
-    {2 times Winner of College (Swaranjali) Chess Tournament and Runner-up in District Nodal’s Competition} % credential name
-    {Jan 2021- Present} % date of graduation
-
-\Responsibility
-    {Member - Scintilla Literary Club} % school name
-    {IPS Academy} % credential name
-    {Apr 2021- Mar 2022} % date of graduation
-
-\Responsibility
-    {Volunteered - Ek Bharat Shreshtha Bharat} % school name
-    {IPS Academy} % credential name
-    {Jun 2022} % date of graduation
-    
-\Responsibility
-    {Co-Lead - Google Student Developer Club} % school name
-    {IPS Academy} % credential name
-    {May 2022- Apr 2023} % date of graduation
-
-    
-    
-\section{Education}
-
-\EducationExperience
-    {IES - IPS Academy, Indore} % school name
-    {Bachelor of Technology in Data Science} % credential name
-    {Jul 2020- Jul 2024} % date of graduation
-    {CGPA – 8}
-    {
-        \item Actively engaged in a wide range of co-curricular activities, highlighting a strong dedication to holistic development beyond academics.
-        \item Exhibited strategic thinking, teamwork, and discipline as a valuable member of the Chess Team, achieving notable success in multiple tournaments.
-        \item Demonstrated enthusiasm, technical expertise, and strong collaboration skills by actively participating in hackathons and coding competitions.
-    } 
-
-% \EducationExperience
-%     {Sarafa Vidhya Niketan, Indore} % school name
-%     {High School, 12th Class} % credential name
-%     {2020} % date of graduation
-%     {P.C.M. + C.S}
-%     {
-%         \item Proactively engaged in 2+ inter-school Hackathons, effectively demonstrating exceptional problem-solving skills and a collaborative spirit.
-%         \item Showcased technical prowess in Tech-exhibitions, delivering compelling presentations on innovative projects, garnering recognition and commendations.
-%         \item Evidenced a solid foundation in science and computer science subjects, reflecting a comprehensive understanding and proficiency in these domains.
-%     }
+%======================================================================
+\sectionTitle{Internships}{\faBriefcase}
+%======================================================================
+\begin{experiences}
+  \experience%
+    [Present]%
+    {March 2022}%
+    {\textbf{Python Development Lead} @ IES-IPS Academy (College Management Software)}%
+    [\begin{itemize}
+      \item Developed and optimized 10+ Python scripts and applications, streamlining critical \\processes such as grade calculation, NBA analysis, and backend development and leading project for 30\% efficiency increase.
+      \item Revamped service processes, improving communication flow across 10 departments. Achieved 75\% reduction in paperwork and 40\% efficiency boost.
+      \item Streamlined the website’s efficiency and functionality, optimizing data management and organization for over 1500+ students across 10+ different engineering courses to meet the institution’s rigorous standards.
+    \end{itemize}]
+\end{experiences}
+%======================================================================
+\sectionTitle{Personal Projects}{\faCode}
+%======================================================================
+\begin{itemize}
+  \item \link{https://github.com/priyansh-pj/ExpertBill}{\texttt{ExpertBill}} \githubSymbol:
+    (PHP, CodeIgniter, mySQL) (\link{https://expertbill.in}{\texttt{ExpertBill.in}})
+    Developed a robust ERP web application using CodeIgniter 4, empowering streamlined organizational operations, resource allocation, and task management for enhanced efficiency.
+  \item \link{https://github.com/priyansh-pj/ExpenseTracker}{\texttt{ExpenseTracker}} \githubSymbol:
+    (JavaScript, React.js) 
+    Built React Expense Tracker for easy financial monitoring. Users \\categorize transactions, access real-time updates, and benefit from intuitive visuals for improved financial\\ management.
+  \item \link{https://github.com/priyansh-pj/Investment-Guide}{\texttt{Investment Guide}} \githubSymbol:
+    (JavaScript, React.js)
+    Built a React-based Investment Guide with an interest calculator, helping users predict earnings from diverse investments. User-friendly interface and precision offer valuable insights for informed financial choices.
+  \item \link{https://github.com/priyansh-pj/Ai-Tools }{\texttt{Ai-Tools}} \githubSymbol:
+    (Django, PostgreSQL)
+    Curated AI tools repository for content management system (CMS), optimizing efficiency and enhancing user experience.
+\end{itemize}
 
 
-    
-\section{Technical Skills}
+%======================================================================
+\sectionTitle{Education}{\faGraduationCap}
+%======================================================================
+\begin{educations}
+  \education%
+    {July 2020}%
+    [June 2024]%
+    {Institute of Engineering \& Science, IPS Academy}%
+    {CGPA - 8.1/10}%
+    {Data Science}%
+    {Bachelor of Technology}
+    {Indore}
+\end{educations}
 
-\SkillList{
-    \SkillItem{Languages}{: Python, Javascript, PHP, HTML, CSS, C, C++}
-    \SkillItem{Frameworks}{: Django, CodeIgniter}
-    \SkillItem{Libraries}{: Numpy, Pandas, Scikit-Learn, React.js, Bootstrap, Ajax, jquery}
-    \SkillItem{Tools}{: Git, Postman, Unix, Jupyter Notebook, Excel, PowerBI, Tableau}
-    \SkillItem{Databases}{: PostgreSQL, MongoDB}
-    \SkillItem{Skills}{: Statistics and Probability, Data Visualization, Web Development}
-    
-}
+%======================================================================
+\sectionTitle{Achivements}{\faTrophy}
+%======================================================================
+\begin{itemize}
+  \item \textbf{GDSC Co-Lead, IPS Academy}: Successfully contributed to fostering a dynamic tech community by co-leading Google Developer Student Club activities at IPS Academy, promoting learning and innovation among peers.
+  \item \textbf{Vice Captain, Chess Club (CSE)}: Led Chess club as Vice Captain, securing two-time inter-college championship titles and one runner-up position at nodal tournaments.
+  \item Secured the runner-up position in the inter-college DataBliss (ExpertBill) project competition for the developing an efficient ERP software solution.
+
+\end{itemize}
+
+
 
 \end{document}
